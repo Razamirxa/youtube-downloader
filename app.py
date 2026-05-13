@@ -13,7 +13,7 @@ def fetch_video(url):
     try:
         command = [
             "yt-dlp",
-            "--js-runtimes", "nodejs",
+            "--js-runtimes", "node",
             "-f", "18/22/best[ext=mp4]",
             "-o", f"{temp_dir}/%(title)s.%(ext)s",
             url
